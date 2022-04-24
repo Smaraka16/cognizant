@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src=https://code.jquery.com/jquery-1.12.4.js></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo"><img src="images/company logo.png" alt="" /></div>
+      <div class="logo"><img src="images/user.png" alt="" /></div>
+    </div>
+    <div class="main_container">
+      <div class="main_section">
+        <div class="main_header">
+          <h2>Registration Form</h2>
+        </div>
+        <form >
+          <div class="personal_info">
+            <div class="name_details">
+              <div class="first_name">
+                <h3>First name</h3>
+                <input type="text" name="first name" id="fname" required />
+                <p id="message_first">"first name should not contain number,<br>characters or more than 100 words</p>
+              </div>
+  
+              <div class="first_name">
+                <h3>Second name</h3>
+                <input type="text" name="second name" id="sname" required />
+                <p id="message_second">"second name should not contain number,<br>characters or more than 100 words</p>
+              </div>
+            </div>
+            <div class="gender_birtdate">
+              <div class="birthdate_gender">
+                <div class="gender_styles"> 
+                  <h3>Birthdate</h3>
+                  <input type="text" id="datepicker" required />
+                </div>
+                <div class="gender_info">
+                  <h3>Gender</h3>
+                  <span class="gender_details">Male</span>
+                  <input type="radio" name="gender" id="male" value="male" required/>
+                  <span class="gender_details">Female</span
+                  ><input type="radio" name="gender" id="female" value="female" required />
+                </div>
+              </div>
+            </div>
+             
+            <div class="contact_info">
+              <div class="email_details">
+                <h3>Email</h3>
+                <input type="email" name="email" id="email" required />
+                <p id="email_style">Invalid email id</p>
+              </div>
+              <div class="phone_details">
+                <h3>Phone Number</h3>
+                <input type="tel" id="tel" />
+                <p id="phone_style">phone number is not valid</p>
+              </div>
+            </div>
+            <select name="subscription" id="subscription">
+              <option value="Maths">Maths</option>
+              <option value="Science">Science</option>
+              <option value="English">English</option>
+            </select>
+            <div class="submit_btn">
+              <input type="submit" value="submit" id="submit" />
+            </div>
+          </div>
+        </div>
+      </div>
+        </form>
+      </div>   
+    <footer class="foot_style">
+      <h3>Registration Form &copy; All rights reserved 2022</h3>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+
+<!-- <div class="gender_birthdate">
+  <div class="birthdate">
+    <div class="gender_styles"> 
+    <h3>Birthdate</h3>
+    <input type="text" id="datepicker" required />
+  </div>
+  </div>
+  <div class="gender_info">
+    <h3>Gender</h3>
+    <span class="gender_details">Male</span>
+    <input type="radio" name="gender" id="male" value="male" required/>
+    <span class="gender_details">Female</span
+    ><input type="radio" name="gender" id="female" value="female" required />
+  </div>
+</div> -->
